@@ -20,11 +20,6 @@ $(LIB_TARGET): $(LIB_OBJS)
 	mkdir -p $(dir $@)
 	$(CC) -shared $^ -o $@
 
-#%.o: %.c
-#	@echo compiling for $@
-#	mkdir -p $(dir $@)
-#	$(CC) -I$(LIB_INC_DIRS) -c $^ -o $@ 
-
 $(BUILD_DIR)/%.o: %.c
 	@echo compiling for $@
 	mkdir -p $(dir $@)
