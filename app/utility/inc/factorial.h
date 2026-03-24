@@ -3,6 +3,14 @@
 
 #include <stdint.h>
 
-uint64_t factorial(uint8_t numer);
+#define MYDLL_EXPORTS
+
+#ifdef MYDLL_EXPORTS
+  #define MYDLL_API __declspec(dllexport)
+#else
+  #define MYDLL_API __declspec(dllimport)
+#endif
+
+MYDLL_API uint64_t factorial(uint8_t numer);
 
 #endif

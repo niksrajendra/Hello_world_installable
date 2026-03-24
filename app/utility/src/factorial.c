@@ -1,6 +1,6 @@
 #include <factorial.h>
 
-uint64_t factorial(uint8_t number)
+MYDLL_API uint64_t factorial(uint8_t number)
 {
     uint64_t result = 1;
     if((number == 1)||(number == 0))

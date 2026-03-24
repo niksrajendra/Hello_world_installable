@@ -1,3 +1,4 @@
+#include <windows.h>
 #include <stdio.h>
 #include <factorial.h>
 
@@ -7,7 +8,7 @@ int main(int argc, char* argv[])
 	printf("Hello world\n");
 	for(test = 0; test < 18; test++)
 	{
-		printf("factorial of %d is %ld\n",test,factorial(test));
+		printf("factorial of %d is %llu\n",test,factorial(test));
 	}
 	return 0;
 }
